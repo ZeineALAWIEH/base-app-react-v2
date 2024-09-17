@@ -1,0 +1,76 @@
+import { createTheme } from '@mui/material/styles';
+
+//Creation et configuration du theme pour MUI
+//Attention : Ajouter theme.d.ts dans /types pour typer les valeurs
+//grayed->Sand, brand->Amber
+const themeMUI = createTheme({
+  typography: {
+    fontFamily: 'var(--font-roboto)',
+  },
+  breakpoints: {
+    values: {
+      xs0: 0,   
+      xs : 414,
+      sm: 640,    
+      md: 768,    
+      md9: 900,
+      lg: 1024,
+      xl:1280,   
+      xxl: 1536, 
+    },  
+  },
+  rdx: {
+    grayed1: '#fdfdfc',
+    grayed2: '#f9f9f8',
+    grayed3: '#f1f0ef',
+    grayed4: '#e9e8e6',
+    grayed5: '#e2e1de',
+    grayed6: '#dad9d6',
+    grayed7: '#cfceca',
+    grayed8: '#bcbbb5',
+    grayed9: '#8d8d86',
+    grayed10: '#82827c',
+    grayed11: '#63635e',
+    grayed12: '#21201c',
+    grayedDark1: '#111110',
+    grayedDark2: '#191918',
+    grayedDark3: '#222221',
+    grayedDark4: '#2a2a28',
+    grayedDark5: '#31312e',
+    grayedDark6: '#3b3a37',
+    grayedDark7: '#494844',
+    grayedDark8: '#62605b',
+    grayedDark9: '#6f6d66',
+    grayedDark10: '#7c7b74',
+    grayedDark11: '#b5b3ad',
+    grayedDark12: '#eeeeec',
+    brand1: '#fefdfb', 
+    brand2: '#fefbe9',
+    brand3: '#fff7c2',
+    brand4: '#ffee9c',
+    brand5: '#fbe577',
+    brand6: '#f3d673',
+    brand7: '#e9c162',
+    brand8: '#e2a336',
+    brand9: '#ffc53d',
+    brand10: '#ffba18',
+    brand11: '#ab6400',
+    brand12: '#4f3422',
+    brand13: '#372417',
+    brand14: '#271a11',
+    brandDark1: '#16120c',
+    brandDark2: '#1d180f',
+    brandDark3: '#302008',
+    brandDark4: '#3f2700',
+    brandDark5: '#4d3000',
+    brandDark6: '#5c3d05',
+    brandDark7: '#714f19',
+    brandDark8: '#8f6424',
+    brandDark9: '#ffc53d',
+    brandDark10: '#ffd60a',
+    brandDark11: '#ffca16',
+    brandDark12: '#ffe7b3',
+  }
+});
+
+export default themeMUI;

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Theme Light */
+  --background: #fefdfb; /* --rdx-brand-1  */
+  --foreground: #4f3422; /* --rdx-brand-12  */
+
+  /* Color definition grayed->Sand, brand->Amber*/
+  --rdx-grayed-1: '#fdfdfc'; 
+  --rdx-grayed-2: '#f9f9f8';
+  --rdx-grayed-3: '#f1f0ef';
+  --rdx-grayed-4: '#e9e8e6';
+  --rdx-grayed-5: '#e2e1de';
+  --rdx-grayed-6: '#dad9d6';
+  --rdx-grayed-7: '#cfceca';
+  --rdx-grayed-8: '#bcbbb5';
+  --rdx-grayed-9: '#8d8d86';
+  --rdx-grayed-10: '#82827c';
+  --rdx-grayed-11: '#63635e';
+  --rdx-grayed-12: '#21201c';
+  --rdx-grayed-dark-1: '#111110';
+  --rdx-grayed-dark-2: '#191918';
+  --rdx-grayed-dark-3: '#222221';
+  --rdx-grayed-dark-4: '#2a2a28';
+  --rdx-grayed-dark-5: '#31312e';
+  --rdx-grayed-dark-6: '#3b3a37';
+  --rdx-grayed-dark-7: '#494844';
+  --rdx-grayed-dark-8: '#62605b';
+  --rdx-grayed-dark-9: '#6f6d66';
+  --rdx-grayed-dark-10: '#7c7b74';
+  --rdx-grayed-dark-11: '#b5b3ad';
+  --rdx-grayed-dark-12: '#eeeeec';
+  --rdx-brand-1: '#fefdfb'; 
+  --rdx-brand-2: '#fefbe9';
+  --rdx-brand-3: '#fff7c2';
+  --rdx-brand-4: '#ffee9c';
+  --rdx-brand-5: '#fbe577';
+  --rdx-brand-6: '#f3d673';
+  --rdx-brand-7: '#e9c162';
+  --rdx-brand-8: '#e2a336';
+  --rdx-brand-9: '#ffc53d';
+  --rdx-brand-10: '#ffba18';
+  --rdx-brand-11: '#ab6400';
+  --rdx-brand-12: '#4f3422';
+  --rdx-brand-13: '#372417';
+  --rdx-brand-14: '#271a11';
+  --rdx-brand-dark-1: '#16120c';
+  --rdx-brand-dark-2: '#1d180f';
+  --rdx-brand-dark-3: '#302008';
+  --rdx-brand-dark-4: '#3f2700';
+  --rdx-brand-dark-5: '#4d3000';
+  --rdx-brand-dark-6: '#5c3d05';
+  --rdx-brand-dark-7: '#714f19';
+  --rdx-brand-dark-8: '#8f6424';
+  --rdx-brand-dark-9: '#ffc53d';
+  --rdx-brand-dark-10: '#ffd60a';
+  --rdx-brand-dark-11: '#ffca16';
+  --rdx-brand-dark-12: '#ffe7b3';
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Theme Dark */
+  :root {
+    --background: #16120c; /* --rdx-brand-dark-1  */
+    --foreground: #ffe7b3; /* --rdx-brand-dark-12  */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
